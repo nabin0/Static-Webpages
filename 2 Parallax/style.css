@@ -1,0 +1,214 @@
+/* by web-world */
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    font-size: 25px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul{
+
+    list-style: none;
+}
+
+.logo-img img{
+    width: 60px;
+
+}
+
+.container{
+    width: 95%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+    /* HEADER  */
+header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 100px;
+        box-sizing: border-box;
+    background-color: rgba(0,0,0,.1);
+    z-index: 2;
+}
+
+header .logo img{
+    height: 50px;
+    float: left;
+    margin: 18px 1px;
+    filter: invert();
+}
+
+.navigation{
+    color: white;
+    float: right;
+}
+
+.nav-items ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.nav-items ul li a{
+    padding: 0 13px;
+    line-height: 43px;
+    display: block;
+}
+
+/* BODY PART  */
+
+.a1,.a2,.a3,.a4{
+    /* position: relative; */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.a1{
+    background-image: url(images/image1.jpg);
+    height: 100vh;
+}
+.a2{
+    background-image: url(images/image2.jpg);
+    height: 100vh;
+}
+.a3{
+    background-image: url(images/image3.jpg);
+    height: 100vh;
+}
+.a4{
+    background-image: url(images/image1.jpg);
+    height: 100vh;
+}
+.image-2{
+    height: 700px;
+}
+
+.text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+
+}
+.text span{
+    font-size: 35px;
+    background-color:#000;
+    color: aliceblue;
+    padding: 18px 97px;
+    text-transform: uppercase;
+    padding-block: 20px;
+}
+.box-section .container {
+    text-align: center;
+    font-family: cursive;
+}
+.box-section .container .h2{
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 8px;
+}
+
+.box-section .a2-flex-box{
+    display: flex;
+    margin: 32px 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-section .a2-flex-box p{
+    width: 220px;
+    padding: 5px 12px;
+    margin: 12px 22px;
+}
+
+.box-section .a2-flex-box p:hover{
+       border-right: 3px solid rgb(172, 158, 158);
+       border-left: 3px solid rgb(172, 158, 158);
+       border-bottom: 3px dotted rgb(172, 158, 158);
+       border-top: 3px dotted rgb(172, 158, 158);
+       color: gray;
+    }
+
+    .fin-border h2{
+        text-align: center;
+    }
+ .fin-border h2:before, .fin-border h2:after {
+        display: block;
+        content: '';
+        height: 10px;
+        background-color: linear-gradient(to (right, left), yellow , transparent);
+    }
+#contact{
+    background-color: #161212;
+    color: white;
+    overflow: hidden;
+}
+
+#about-us{
+    background-color: rgba(12 13 16 / 70%);
+    color: white;
+    overflow: hidden;
+
+}
+    
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-top:2px solid grey;
+    border-bottom:2px solid grey;
+    /* border: 2px solid red; */
+    margin-top: 160px;
+}
+
+
+.socmed img{
+    height: 3rem;
+    width: 3rem;
+    padding: 6px 5px;
+    margin: 20px 21px;
+}
+
+.copyright
+{
+    text-align: center;
+}
+#email{
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+#email img{
+    height: 12px;
+}
+
+@media screen and (max-width: 480px){
+    body{
+        background-color: blue;
+
+    }
+    header{
+        min-height: 70vh;
+    }
+    .text , .text span{
+        font-size: 35px;
+        padding: 0;
+        margin: 0;
+    }
+    .a1 .text{
+        display: none;
+    }
+}
