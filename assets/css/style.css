@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --dark: #000;
+  --light: #fff;
+  --neon: rgb(0, 195, 255);
+  --red: red;
+  --yellow: yellow;
+}
+header{
+    border: 0.1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+#logo{
+    width: 150px;
+    height: 55px;
+}
