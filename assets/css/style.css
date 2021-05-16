@@ -13,6 +13,7 @@
 }
 header {
   border: 0.1px solid red;
+  height: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,8 +22,20 @@ header {
 }
 #logo {
   width: 150px;
-  height: 55px;
+  /* height: 55px; */
   color: var(--dark);
   text-decoration: none;
+  overflow: hidden;
 }
-
+.headerNav{
+  width: 20%;
+  margin-right: 3%;
+}
+nav .navList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
