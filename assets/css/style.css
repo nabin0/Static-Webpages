@@ -12,13 +12,14 @@
   --yellow: yellow;
 }
 header {
-  border: 0.1px solid red;
+
   height: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 0px 10px 0 0px;
+  box-shadow: 2px 2px 5px var(--dark);
 }
 #logo img{
   margin-left: 0px;
@@ -26,6 +27,7 @@ header {
   color: var(--dark);
   text-decoration: none;
   overflow: hidden;
+  background: var(--light);
 }
 .headerNav{
   width: 20%;
@@ -44,6 +46,7 @@ nav .navList {
 .musik{
   height: 30px;
   border-bottom: 1px solid #000;
+  visibility: hidden;
 }
 
 /* Theme Box */
@@ -60,8 +63,7 @@ nav .navList {
 
 .linesQuote{
   width: 90vw;
-  height: 70vh;
-  border: .2px solid green;
+  min-height: 50vh;
   position: relative;
   margin-top: 4vh;
   top: 50%;
@@ -71,24 +73,73 @@ nav .navList {
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(2px);
+  background: var(--light);
+}
+.unUsed{
+  width: 100%;
+  height: 100%;
+}
+.linesQuote::before, .linesQuote::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 300ms linear;
+  background: var(--dark);
+  transition-delay: 0.2s;
+}
+.unUsed::before, .unUsed::after{
+  content: "";
+  width: 2px;
+  height: 0;
+  position: absolute;
+  transition: all 300ms linear;
+  background: var(--dark);
+  transition-delay: 0s;
+}
+.linesQuote:hover::before, .linesQuote:hover::after{
+  width: 100%;
+}
+.unUsed:hover::before, .unUsed:hover::after{
+  height: 100%;
+}
+.linesQuote::before{
+  top: 0;
+  left: 0;
+}
+.linesQuote::after{
+  bottom: 0;
+  right: 0;
+}
+.unUsed::before{
+  top: 0;
+  left: 0;
+}
+.unUsed::after{
+  bottom: 0;
+  right: 0;
 }
 .quote{
-  width: 65%;
+  width: 90%;
   height: 90%;
-  border: 1px solid bisque;
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.6;
+  font-family: Berkshire Swash;
 }
 .angBracOpn{
-  display: block;
+  font-weight: bold;
   text-align: left;
+  color: var(--red);
 }
 .angBracCls{
-  display: block;
   text-align: right;
+  color: var(--neon);
+  font-weight: bold;
 }
 .quoteTeller{
   display: block;
   text-align: right;
   font-weight: bold;
+  margin-top: 5px;
 }
