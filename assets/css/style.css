@@ -18,11 +18,11 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 10px;
+  padding: 0px 10px 0 0px;
 }
-#logo {
-  width: 150px;
-  /* height: 55px; */
+#logo img{
+  margin-left: 0px;
+  height: 45px;
   color: var(--dark);
   text-decoration: none;
   overflow: hidden;
@@ -38,4 +38,57 @@ nav .navList {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Body css now from here */
+.musik{
+  height: 30px;
+  border-bottom: 1px solid #000;
+}
+
+/* Theme Box */
+.theme{
+  background: #000;
+  transform: rotate(90deg);
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  display: none;
+}
+
+.linesQuote{
+  width: 90vw;
+  height: 70vh;
+  border: .2px solid green;
+  position: relative;
+  margin-top: 4vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote{
+  width: 65%;
+  height: 90%;
+  border: 1px solid bisque;
+  font-size: 2em;
+  line-height: 1.6;
+}
+.angBracOpn{
+  display: block;
+  text-align: left;
+}
+.angBracCls{
+  display: block;
+  text-align: right;
+}
+.quoteTeller{
+  display: block;
+  text-align: right;
+  font-weight: bold;
 }
