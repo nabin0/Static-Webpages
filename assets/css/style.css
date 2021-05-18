@@ -12,6 +12,7 @@
   --yellow: yellow;
   --filter: none;
 }
+
 :root[theme="dark"]{
   --dark: #fff;
   --light: #000;
@@ -19,11 +20,11 @@
   --red: red;
   --yellow: yellow;
   --filter: invert();
-
 }
 body{
   background: var(--light);
   color: var(--light);
+  overflow: hidden;
 }
 header {
   height: 60px;
@@ -83,6 +84,10 @@ nav .navList {
   justify-content: center;
   align-items: center;
   color: var(--light);
+}
+.themeText{
+  height: 100%;
+  width: 100%;
 }
 .theme .fa-moon-o {
   font-weight: bold;
