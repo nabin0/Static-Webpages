@@ -13,7 +13,7 @@
   --filter: none;
 }
 
-:root[theme="dark"]{
+:root[theme="dark"] {
   --dark: #fff;
   --light: #000;
   --neon: rgb(0, 195, 255);
@@ -21,10 +21,10 @@
   --yellow: yellow;
   --filter: invert();
 }
-body{
+body {
   background: var(--light);
   color: var(--light);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 header {
   height: 60px;
@@ -32,10 +32,9 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 10px 0 0px;
+  padding: 0px;
   box-shadow: 2px 2px 5px var(--dark);
   color: var(--dark);
-
 }
 #logo img {
   margin-left: 0px;
@@ -49,6 +48,9 @@ header {
 .headerNav {
   width: 20%;
   margin-right: 3%;
+}
+.hamburgerMenu {
+  display: none;
 }
 nav .navList {
   list-style-type: none;
@@ -85,7 +87,7 @@ nav .navList {
   align-items: center;
   color: var(--light);
 }
-.themeText{
+.themeText {
   height: 100%;
   width: 100%;
 }
@@ -199,4 +201,42 @@ nav .navList {
   text-align: right;
   font-weight: bold;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .hamburgerMenu {
+    display: block;
+  }
+  #navList {
+    display: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  .linesQuote {
+    font-size: 0.4rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px -10px 0px 0;
+  }
+  .headerNav {
+    margin: 0 -10% 0 0;
+    padding: 0;
+  }
+  #logo img {
+    height: 30px;
+  }
+
+  /* Theme Box */
+  .theme {
+    z-index: 1;
+    width: 80px;
+    height: 40px;
+    right: -60px;
+    top: 50%;
+  }
 }
