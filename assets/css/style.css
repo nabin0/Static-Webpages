@@ -24,6 +24,11 @@
 body {
   background: var(--light);
   color: var(--light);
+}
+.site{
+  width: 100%;
+  height: auto;
+  position: relative;
   overflow-x: hidden;
 }
 header {
@@ -130,6 +135,7 @@ nav .navList {
   background: var(--light);
   box-shadow: inset -2px 2px 4px var(--light), 1px 1px 4px var(--dark);
   color: var(--dark);
+  margin-bottom: 1%;
 }
 .unUsed {
   width: 100%;
