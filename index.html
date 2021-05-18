@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      ,
-      minimum-scale="1.0"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Code Vision</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" , minimum-scale="1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet" />
 
-  <body>
-    <div class="site">
-      <!-- Header Containing navigation bar -->
-      <header>
-        <a href="./" class="logo" id="logo">
-          <img
-            src="./assets/images/logo/logo.png"
-            alt=""
-            class="logoImg"
-            id="logoImg"
-          />
-        </a>
-        <nav class="headerNav">
-          <div class="hamburgerMenu" id="hamburgerMenu">
-            <i class="fa fa-bars"></i>
-          </div>
-          <ul class="navList hideNavList" id="navList">
+  <title>Code Vision</title>
+</head>
+
+<body>
+  <div class="site">
+    <!-- Header Containing navigation bar -->
+    <header>
+      <a href="./" class="logo" id="logo">
+        <img src="./assets/images/logo/logo.png" alt="" class="logoImg" id="logoImg" />
+      </a>
+      <nav class="headerNav">
+        <div class="hamburgerMenu" id="hamburgerMenu">
+          <i class="fa fa-bars"></i>
+        </div>
+        <ul class="navList hideNavList" id="navList">
+          <a href="assets/html/about.html">
             <li class="navListItems">About</li>
+          </a>
+          <a href="assets/html/project.html">
             <li class="navListItems">Projects</li>
+          </a>
+          <a href="assets/html/contact.html">
             <li class="navListItems">Contact</li>
-          </ul>
-        </nav>
-      </header>
-      <div class="musik" id="musik">Music Goes Here</div>
-      <div class="theme" id="theme">
-        <i class="fa fa-angle-up" id="themeCtrl"></i>
-        <div class="themeText" id="themeMode">
-          <i class="fa fa-moon-o" id="themeText">Dark</i>
-        </div>
-      </div>
-      <div class="linesQuote">
-        <div class="unUsed">
-          <main class="quote">
-            <p>
-              <span class="angBracOpn"> &lt; &gt; </span>
-              Welcome To World Of Code.
-              <span class="angBracCls">&lt; / &nbsp;&gt;</span>
-            </p>
-            <span class="quoteTeller">#CODEVISION</span>
-          </main>
-        </div>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <div class="musik" id="musik">Dark Theme
+      <audio id="player">
+        <source src="assets/musik/theme.mp3" type="audio/mpeg">
+      </audio>
+      <button onclick="document.getElementById('player').play()"> <i class="fa fa-play"></i> </button> </button>
+      <button onclick="document.getElementById('player').pause()"><i class="fa fa-pause"></i> </button> </button>
+    </div>
+    <div class="theme" id="theme">
+      <i class="fa fa-angle-up" id="themeCtrl"></i>
+      <div class="themeText" id="themeMode">
+        <i class="fa fa-moon-o" id="themeText">Dark</i>
       </div>
     </div>
-    <script src="assets/js/app.js"></script>
-  </body>
+    <div class="linesQuote">
+      <div class="unUsed">
+        <main class="quote">
+          <p>
+            <span class="angBracOpn"> &lt; &gt; </span>
+            Welcome To World Of Code.
+            <span class="angBracCls">&lt; / &nbsp;&gt;</span>
+          </p>
+          <span class="quoteTeller">#CODEVISION</span>
+        </main>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>

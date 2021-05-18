@@ -66,12 +66,19 @@ nav .navList {
   align-items: center;
   justify-content: space-between;
 }
-
+nav .navList a {
+  text-decoration: none;
+  color: var(--dark);
+}
 /* Body css now from here */
 .musik {
   height: 30px;
-  border-bottom: 1px solid var(--dark);
-  visibility: hidden;
+  float: right;
+  margin: 5px 8px;
+  padding: 5px;
+  border: 0.2px solid var(--neon);
+  border-radius: 6px;
+  border-collapse: collapse;
   color: var(--dark);
 }
 
@@ -123,7 +130,7 @@ nav .navList {
   width: 90vw;
   min-height: 50vh;
   position: relative;
-  margin-top: 4vh;
+  margin-top: 10vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%);
