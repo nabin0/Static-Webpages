@@ -10,9 +10,22 @@
   --neon: rgb(0, 195, 255);
   --red: red;
   --yellow: yellow;
+  --filter: none;
+}
+:root[theme="dark"]{
+  --dark: #fff;
+  --light: #000;
+  --neon: rgb(0, 195, 255);
+  --red: red;
+  --yellow: yellow;
+  --filter: invert();
+
+}
+body{
+  background: var(--light);
+  color: var(--light);
 }
 header {
-
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -20,21 +33,25 @@ header {
   justify-content: space-between;
   padding: 0px 10px 0 0px;
   box-shadow: 2px 2px 5px var(--dark);
+  color: var(--dark);
+
 }
-#logo img{
+#logo img {
   margin-left: 0px;
   height: 45px;
   color: var(--dark);
   text-decoration: none;
   overflow: hidden;
-  background: var(--light);
+  filter: var(--filter);
+  cursor: pointer;
 }
-.headerNav{
+.headerNav {
   width: 20%;
   margin-right: 3%;
 }
 nav .navList {
   list-style-type: none;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -43,25 +60,54 @@ nav .navList {
 }
 
 /* Body css now from here */
-.musik{
+.musik {
   height: 30px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--dark);
   visibility: hidden;
+  color: var(--dark);
 }
 
 /* Theme Box */
-.theme{
-  background: #000;
-  transform: rotate(90deg);
-  width: 100px;
+.theme {
+  background: var(--dark);
+  cursor: pointer;
+  transform: rotate(-90deg);
+  width: 80px;
   height: 40px;
   position: absolute;
-  right: -30px;
+  right: -60px;
   top: 50%;
-  display: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--light);
+}
+.theme .fa-moon-o {
+  font-weight: bold;
+  color: var(--light);
+  width: 100%;
+  height: 100%;
+}
+.theme .fa-angle-down {
+  height: 25px;
+  background: rgb(4, 255, 201);
+  width: 100%;
+  position: relative;
+  top: -20px;
+  color: var(--dark);
+}
+.theme .fa-angle-up {
+  height: 25px;
+  background: rgb(4, 255, 201);
+  width: 100%;
+  position: relative;
+  top: -20px;
+  color: var(--dark);
 }
 
-.linesQuote{
+.linesQuote {
   width: 90vw;
   min-height: 50vh;
   position: relative;
@@ -75,69 +121,75 @@ nav .navList {
   align-items: center;
   backdrop-filter: blur(2px);
   background: var(--light);
+  box-shadow: inset -2px 2px 4px var(--light), 1px 1px 4px var(--dark);
+  color: var(--dark);
 }
-.unUsed{
+.unUsed {
   width: 100%;
   height: 100%;
 }
-.linesQuote::before, .linesQuote::after{
+.linesQuote::before,
+.linesQuote::after {
   content: "";
   width: 0;
-  height: 2px;
+  height: 3px;
   position: absolute;
   transition: all 300ms linear;
   background: var(--dark);
   transition-delay: 0.2s;
 }
-.unUsed::before, .unUsed::after{
+.unUsed::before,
+.unUsed::after {
   content: "";
-  width: 2px;
+  width: 3px;
   height: 0;
   position: absolute;
   transition: all 300ms linear;
   background: var(--dark);
   transition-delay: 0s;
 }
-.linesQuote:hover::before, .linesQuote:hover::after{
+.linesQuote:hover::before,
+.linesQuote:hover::after {
   width: 100%;
 }
-.unUsed:hover::before, .unUsed:hover::after{
+.unUsed:hover::before,
+.unUsed:hover::after {
   height: 100%;
 }
-.linesQuote::before{
+.linesQuote::before {
   top: 0;
   left: 0;
 }
-.linesQuote::after{
+.linesQuote::after {
   bottom: 0;
   right: 0;
 }
-.unUsed::before{
+.unUsed::before {
   top: 0;
   left: 0;
 }
-.unUsed::after{
+.unUsed::after {
   bottom: 0;
   right: 0;
 }
-.quote{
+.quote {
   width: 90%;
   height: 90%;
   font-size: 3em;
   line-height: 1.6;
   font-family: Berkshire Swash;
 }
-.angBracOpn{
+.angBracOpn {
   font-weight: bold;
   text-align: left;
   color: var(--red);
 }
-.angBracCls{
+.angBracCls {
   text-align: right;
   color: var(--neon);
   font-weight: bold;
 }
-.quoteTeller{
+.quoteTeller {
   display: block;
   text-align: right;
   font-weight: bold;
