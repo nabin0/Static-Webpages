@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0", minimum-scale=1.0 />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      ,
+      minimum-scale="1.0"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -19,46 +24,47 @@
 
   <body>
     <div class="site">
-    <!-- Header Containing navigation bar -->
-    <header>
-      <a href="./" class="logo" id="logo">
-        <img
-          src="./assets/images/logo/logo.png"
-          alt=""
-          class="logoImg"
-          id="logoImg"
-        />
-      </a>
-      <nav class="headerNav">
-        <div class="hamburgerMenu">
-          <i class="fa fa-bars"></i>
+      <!-- Header Containing navigation bar -->
+      <header>
+        <a href="./" class="logo" id="logo">
+          <img
+            src="./assets/images/logo/logo.png"
+            alt=""
+            class="logoImg"
+            id="logoImg"
+          />
+        </a>
+        <nav class="headerNav">
+          <div class="hamburgerMenu" id="hamburgerMenu">
+            <i class="fa fa-bars"></i>
+          </div>
+          <ul class="navList hideNavList" id="navList">
+            <li class="navListItems">About</li>
+            <li class="navListItems">Projects</li>
+            <li class="navListItems">Contact</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="musik" id="musik">Music Goes Here</div>
+      <div class="theme" id="theme">
+        <i class="fa fa-angle-up" id="themeCtrl"></i>
+        <div class="themeText" id="themeMode">
+          <i class="fa fa-moon-o" id="themeText">Dark</i>
         </div>
-        <ul class="navList" id="navList">
-          <li class="navListItems">About</li>
-          <li class="navListItems">Projects</li>
-          <li class="navListItems">Contact</li>
-        </ul>
-      </nav>
-    </header>
-    <div class="musik" id="musik">Music Goes Here</div>
-    <div class="theme" id="theme">
-      <i class="fa fa-angle-up" id="themeCtrl"></i>
-      <div class="themeText" id="themeMode">
-        <i class="fa fa-moon-o" id="themeText">Dark</i>
+      </div>
+      <div class="linesQuote">
+        <div class="unUsed">
+          <main class="quote">
+            <p>
+              <span class="angBracOpn"> &lt; &gt; </span>
+              Welcome To World Of Code.
+              <span class="angBracCls">&lt; / &nbsp;&gt;</span>
+            </p>
+            <span class="quoteTeller">#CODEVISION</span>
+          </main>
+        </div>
       </div>
     </div>
-    <div class="linesQuote">
-      <div class="unUsed">
-        <main class="quote">
-          <p>
-            <span class="angBracOpn"> &lt; &gt; </span>
-            Welcome To World Of Code.
-            <span class="angBracCls">&lt; / &nbsp;&gt;</span>
-          </p>
-          <span class="quoteTeller">#CODEVISION</span>
-        </main>
-      </div>
-    </div></div>
     <script src="assets/js/app.js"></script>
   </body>
 </html>

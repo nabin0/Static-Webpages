@@ -25,7 +25,7 @@ body {
   background: var(--light);
   color: var(--light);
 }
-.site{
+.site {
   width: 100%;
   height: auto;
   position: relative;
@@ -213,9 +213,7 @@ nav .navList {
   .hamburgerMenu {
     display: block;
   }
-  #navList {
-    display: none;
-  }
+
   body {
     overflow-x: hidden;
   }
@@ -237,12 +235,30 @@ nav .navList {
     height: 30px;
   }
 
-  /* Theme Box */
   .theme {
     z-index: 1;
     width: 80px;
     height: 40px;
     right: -60px;
     top: 50%;
+  }
+  nav .navList {
+    top: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    z-index: 999;
+    font-size: 2rem;
+    background: var(--light);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 400ms linear;
+  }
+  nav .hideNavList {
+    top: -50vh;
   }
 }

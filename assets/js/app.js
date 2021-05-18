@@ -1,6 +1,15 @@
 let themeMode = document.getElementById("themeMode");
 let themeCtrl = document.getElementById("themeCtrl");
 var themeBox = document.getElementById("theme");
+let hamburgerMenu = document.getElementById("hamburgerMenu");
+let navList = document.getElementById("navList");
+
+// Menu Event
+hamburgerMenu.addEventListener("click", function(){
+navList.classList.toggle("hideNavList");
+})
+
+
 
 // Toggle Theme
 themeMode.addEventListener("click", (e) => {
