@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body-container {
+  display: grid;
+  grid-template-columns: 0.5fr 2.5fr 1fr;
+  grid-column-gap: 1em;
+  background: rgb(60,126,27);
+  background: linear-gradient(38deg, rgba(60,126,27,1) 0%, rgba(121,9,9,1) 57%, rgba(0,212,255,1) 100%);
+}
+
+.icons {
+  width: 32px;
+}
+
+.grid-div-layout-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-div-layout-1 ul {
+  width: 80%;
+  background: rgb(165, 151, 151);
+  border-radius: 16px;
+  height: 96%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  position: relative;
+}
+.grid-div-layout-1 .music-icon-list span {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 12px);
+  transition: all 400ms linear;
+  opacity: 0;
+  font-size: 10px;
+}
+.grid-div-layout-1 .music-icon-list a {
+  text-decoration: none;
+}
+.grid-div-layout-1 .music-icon-list img {
+  opacity: 1;
+  transition: all 400ms linear;
+}
+.grid-div-layout-1 .music-icon-list a:hover img {
+  opacity: 0;
+  color: red;
+  filter: invert();
+}
+.grid-div-layout-1 .music-icon-list a:hover span {
+  opacity: 1;
+}
+
+/* Grid Box 2 */
+
+.grid-div-layout-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-radius: 12px;
+
+  background: rgb(214, 171, 171);
+}
+.grid-div-layout-2 .search-box {
+  width: 50%;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.041);
+  margin-left: 3%;
+  margin-top: 0.5%;
+  border-radius: 12px;
+  position: relative;
+}
+.grid-div-layout-2 .search-box img{
+  width: 27px;
+  position: absolute;
+  left: 4px;
+  top: 0;
+}
+.grid-div-layout-2 .search-box  input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: blue;
+  outline: none;
+  background: none;
+  border-bottom: 2px solid gray;
+}
+
+.grid-div-layout-2 .search-box:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.055);
+}
+
+.grid-div-layout-2 .music-with-img {
+  margin: 1% 2%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0.4em;
+  grid-row-gap: 0.4em;
+  grid-auto-rows: minmax(200px, 300px);
+}
+.grid-div-layout-2 .music-with-img > div:nth-child(1) {
+  grid-column: 1/4;
+}
+.grid-div-layout-2 .music-with-img > div {
+  border: 1px solid gray;
+}
+.grid-div-layout-2 .music-with-img > div{
+  box-shadow: 1px 1px 3px 1px rgb(19, 18, 18);
+  border-radius: 13px;
+}
+.grid-div-layout-2 .music-with-img > div >img{
+  border-radius: 13px;
+}
+
+.gridMusicImg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Grid Box 3 */
+.grid-div-layout-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-div-layout-3 .songs-list-box {
+  display: flex;
+  border-radius: 16px;
+  width: 98%;
+  background: rgb(177, 141, 141);
+  height: 98vh;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+}
+.grid-div-layout-3 .songs-list-box .songs-list ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.grid-div-layout-3 .songs-list-box .songs-list ul li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  margin: 5px 0px;
+  background: rgb(168, 151, 151);
+  border-radius: 15px;
+  box-shadow: 2px 3px 5px 1px black;
+}
+.song-list-img {
+  margin: 0 15px;
+  border-radius: 12px;
+  width: 80px;
+  height: 80px;
+}
+.song-text-data {
+  display: flex;
+  flex-direction: column;
+}
+/* Over MAin body items */
+
+.play-controls {
+  background: rgb(158, 133, 133);
+  width: 62.5vw;
+  height: 98%;
+  position: absolute;
+  top: 1vh;
+  border-radius: 14px;
+  left: 12.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  visibility: hidden;
+}
+.play-controls > div {
+  width: 100%;
+  margin: 4px 0px;
+}
+.play-controls > div:nth-child(1) {
+  width: 80%;
+  height: 50%;
+  margin: 4px 0px;
+}
+.play-controls > div:nth-child(2) {
+  width: 70%;
+  height: 25%;
+}
+.play-controls > div:nth-child(3) {
+  width: 80%;
+  height: 10%;
+}
+.current-music-image{
+  width: 100%;
+  min-height: 60%;
+}
+.current-music-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.music-info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.seekBar {
+  width: 100%;
+  position: relative;
+  height: 15px;
+  background: rgb(211, 192, 192);
+  border-radius: 12px;
+  box-shadow: 1px 1px 3px 4px black;
+}
+.fill {
+  border-radius: 15px;
+  width: 0;
+  height: 15px;
+ background: radial-gradient(circle, rgba(60,126,27,1) 0%, rgba(121,9,9,1) 57%, rgba(0,212,255,1) 100%);
+
+}
+.music-control-btns {
+  visibility: visible;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(141, 112, 112);
+  box-shadow: 1px 1px 3px 3px black;
+  border-radius: 15px;
+}
+.music-control-btns ul {
+  display: flex;
+  width: 80%;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.music-control-btns ul li{
+  padding: 2px 6px;
+  margin: 0 1.3%;
+  background: rgba(138, 127, 127, 0.363);
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px 4px rgba(15, 5, 5, 0.11);
+  transition: all 300ms linear;
+}
+.music-control-btns ul li:hover{
+  background: red;
+  box-shadow: none;
+}

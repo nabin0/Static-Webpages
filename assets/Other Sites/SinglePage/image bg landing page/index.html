@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Web design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo-title" id="logo">
+      <a href="#">WEB-WORLD</a>
+    </div>
+    <header>
+      <ul class="nav-ulist">
+        <li class="navlist" id="list1">Home</li>
+        <li class="navlist" id="list2">Contact</li>
+        <li class="navlist" id="list3">Portfolio</li>
+        <li class="navlist" id="list4">About</li>
+        <li class="navlist" id="list5">Visit</li>
+      </ul>
+    </header>
+    <!-- Body Section Starts From Here -->
+    <section id="body-elem-sliders">
+      <div class="little-v-box l-box" id="projects">PROJECTS</div>
+      <div class="social-media">
+        <div class="little-v-box r-box" id="social-media-btn">SOCIAL LINKS</div>
+        <div class="little-v-box r-box" id="social-media-close-btn" style="display: none;">CLOSE</div>
+        <div class="social-hidden-box" id="social-slide-box">
+          <div class="social-media-links">
+            <img src="007-whatsapp.png" alt="" />
+            <h3>Whatsapp</h3>
+          </div>
+          <div class="social-media-links">
+            <img src="013-twitter-1.png" alt="" />
+            <h3>Twitter</h3>
+          </div>
+          <div class="social-media-links">
+            <img src="034-instagram.png" alt="" />
+            <h3>Instagram</h3>
+          </div>
+          <div class="social-media-links">
+            <img src="043-facebook-1.png" alt="" />
+            <h3>Facebook</h3>
+          </div>
+          <div class="social-media-links">
+            <img src="039-github.png" alt="" />
+            <h3>Github</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+        let socialMediaBtn = document.getElementById('social-media-btn');
+        let socialMediaBox = document.getElementById('social-slide-box');
+        let socialMediaClosebtn = document.getElementById('social-media-close-btn');
+
+        socialMediaBtn.addEventListener("click", function(){
+            socialMediaBox.style.display = 'block' ;
+            socialMediaBtn.style.display = 'none' ;
+            socialMediaClosebtn.style.display = 'block' ;
+            })
+        socialMediaClosebtn.addEventListener("click", function(){
+            socialMediaBox.style.display = 'none' ;
+            socialMediaBtn.style.display = 'block' ;
+            socialMediaClosebtn.style.display = 'none' ;
+            })
+    
+    </script>
+  </body>
+</html>

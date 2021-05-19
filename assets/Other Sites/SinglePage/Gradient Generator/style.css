@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background: #dddddd;
+}
+.show-box {
+  margin: 2%;
+  position: relative;
+  width: 65vw;
+  height: 85vh;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 8px 8px 15px rgb(128, 120, 120),
+    inset -8px -8px 15px rgb(71, 66, 66);
+  transition: all 2s linear;
+  border-radius: 19px;
+}
+#show-screen {
+  width: 85%;
+  height: 75%;
+  margin: 10px;
+  box-shadow: 3px 3px 7px rgb(128, 120, 120), -3px -3px 8px rgb(71, 66, 66);
+  transition: all 1s linear;
+}
+#show-txt {
+  background: #ddd;
+  padding: 8px;
+  box-shadow: 8px 8px 15px rgb(128, 120, 120), -8px -8px 15px rgb(71, 66, 66);
+  transition: all 1s linear;
+  border-radius: 8px;
+}
+.inp-box {
+  border: 2px solid gray;
+  margin: 2%;
+  width: 35vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 8px 8px 15px rgb(128, 120, 120),
+    inset -8px -8px 15px rgb(71, 66, 66);
+  transition: all 2s linear;
+  border-radius: 12px;
+}
+
+#first-inp,
+#second-inp {
+  height: 40%;
+  box-sizing: border-box;
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 1%;
+  box-shadow: 8px 8px 15px rgb(128, 120, 120), -8px -8px 15px rgb(71, 66, 66);
+  transition: all 1s linear;
+  border-radius: 12px;
+}
+
+.angle-inp {
+  height: 20%;
+  box-sizing: border-box;
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  box-shadow: 8px 8px 15px rgb(128, 120, 120), -8px -8px 15px rgb(71, 66, 66);
+  transition: all 1s linear;
+  border-radius: 12px;
+}
+.inp {
+  height: 2px;
+  margin: 2px;
+  background: #35e200;
+}
+
+.show-box:hover,
+#show-screen:hover,
+#first-inp:hover,
+#second-inp:hover,
+.angle-inp:hover {
+  box-shadow: none;
+}
+
+@media (max-width: 750px){
+    
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.show-box {
+    margin: 5%;
+    width: 95%;
+  }
+  
+.inp-box {
+    margin: 12px;
+    width: 100%;
+    height: 90vh;
+  }
+  
+  #first-inp,
+  #second-inp {
+    width: 90%;
+  }
+  
+  .angle-inp {
+    width: 90%;
+  }
+}

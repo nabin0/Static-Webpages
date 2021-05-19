@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Genarator | Picker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container show-box" id="show-box">
+        <h1>Generate Your Gradient</h1>
+        <div id="show-screen"></div>
+        <div class="show-txt" id="show-txt"></div>
+      </div>
+      <div class="container inp-box">
+        <div id="first-inp">
+          <h3>First Color Picker</h3>
+          <label for="">Red</label>
+          <input
+            oninput="generate()"
+            class="inp r-one"
+            type="range"
+            min="0"
+            max="255"
+          />
+          <label for="">Green</label>
+          <input
+            oninput="generate()"
+            class="inp g-one"
+            type="range"
+            min="0"
+            max="255"
+          />
+          <label for="">Blue</label>
+          <input
+            oninput="generate()"
+            class="inp b-one"
+            type="range"
+            min="0"
+            max="255"
+          />
+        </div>
+
+        <div id="second-inp">
+          <h3>Second color Picker</h3>
+          <label for="">Red</label>
+          <input
+            oninput="generate()"
+            class="inp r-Two"
+            type="range"
+            min="0"
+            max="255"
+          />
+          <label for="">Green</label>
+          <input
+            oninput="generate()"
+            class="inp g-Two"
+            type="range"
+            min="0"
+            max="255"
+          />
+          <label for="">Blue</label>
+          <input
+            oninput="generate()"
+            class="inp b-Two"
+            type="range"
+            min="0"
+            max="255"
+          />
+        </div>
+        <div class="angle-inp">
+          <h3>Angle Picker</h3>
+          <label for="">Angle</label>
+          <input
+            type="range"
+            oninput="generate()"
+            class="inp angle-inpt"
+            min="0"
+            max="360"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

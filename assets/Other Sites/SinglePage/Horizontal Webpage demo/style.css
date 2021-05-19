@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.outer-container{
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 600vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg) translatey(-100vh);
+    transform-origin: top left;
+}
+
+.slide{
+    width: 100vw;
+    height: 100vh;
+    background: #00d61d;
+}
+.one{
+    width: 200vw;
+    height: 100vh;
+    background: #ff2211;
+}
+.three{
+    width: 100vw;
+    background: rgb(211, 235, 2);
+}
+.four{
+    background: rgb(7, 167, 230);
+}
+.five{
+    width: 100vw;
+    background: rgb(53, 2, 235);
+}

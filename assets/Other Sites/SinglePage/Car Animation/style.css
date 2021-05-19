@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cloud {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Images/CLoud.jpg);
+  background-position: center;
+  background-size: cover;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+.road {
+  width: 1000vw;
+  height: 209px;
+  background-image: url(Images/Road.jpg);
+  position: absolute;
+  background-size: contain;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: repeat-x;
+  z-index: 1;
+  animation: road 5s infinite linear;
+  transition: all 300ms linear;
+}
+
+@keyframes road {
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+.city{
+    width: 1000vw; 
+    height: 280px;
+    background-image: url(Images/City.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: repeat;
+    left: 0;
+    bottom: 128px;
+  animation: city 50s infinite linear;
+  z-index: 1;
+}
+
+@keyframes city{
+    100%{
+        transform: translatex(-30%);
+    }
+}
+.car{
+    width: 300px;
+    height: 83px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    z-index: 3;
+}
+.car img{
+    width: 100%;
+    width: 300px;
+    height: 83px;
+    animation: car 2s infinite linear;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+@keyframes car{
+    0%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(-1px);
+    }
+}
+
+.wheels{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    z-index : 4;
+}
+.wheels img{
+    width: 60px;
+    height: 60px;
+    animation: wheel .4s linear infinite;
+}
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.wheel-front{
+    position: absolute;
+    left: 51px;
+    top: -48px;
+}
+.wheel-back{
+    position: absolute;
+    left: -132px;
+    top: -52px;
+}

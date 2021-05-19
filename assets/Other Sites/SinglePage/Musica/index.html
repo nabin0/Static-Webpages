@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Musica</title>
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="main-body-grid-divs grid-div-body-layout  grid-div-layout-1">
+            <ul class="music-icons-list">
+                <li class="music-icon-list" id="list-1"  ><a href="#"> <img class="icons img-icon"
+                            src="assets/icons/home.png" alt=""> <span>Home</span> </a></li>
+                <li class="music-icon-list" id="list-2"><a href="#"> <img class="icons img-icon"
+                            src="assets/icons/radio.png" alt=""> <span>Radio</span> </a></li>
+                <li class="music-icon-list" id="list-3"><a href="#"> <img class="icons img-icon"
+                            src="assets/icons/browse.png" alt=""> <span>Browse</span> </a></li>
+                <li class="music-icon-list" id="list-4"><a href="#"> <img class="icons img-icon"
+                            src="assets/icons/apps.png" alt=""> <span>Apps</span> </a></li>
+                <li class="music-icon-list" id="list-5"><a href="#"> <img class="icons img-icon"
+                            src="assets/icons/file.png" alt=""> <span>Device Songs</span> </a></li>
+                <li class="music-icon-list" id="list-6"><a href="#"> <img class="icons img-icon"
+                            src="assets/icons/trending.png" alt=""> <span>Trending</span> </a></li>
+                <li class="music-icon-list" onclick="playControlSizeGiver()" id="list-7"><a href="#"> <img class="icons img-icon"
+                            src="assets/icons/fullscreen.png" alt=""> <span>Let's Play</span> </a></li>
+                <li class="music-icon-list" id="list-8"><a href="#"> <img class="icons img-icon"
+                            src="assets/icons/favourite.png" alt=""> <span>Favourite</span> </a></li>
+            </ul>
+        </div>
+        <div class="main-body-grid-divs grid-div-body-layout grid-div-layout-2">
+            <div class="search-box">
+                <img class="icon" src="assets/icons/search.png" alt="">
+                <input type="text">
+            </div>
+            <div class="music-with-img">
+                <div onclick="playOnClickImage(0)" class="musicListGrid">
+                    <img class="gridMusicImg" src="assets/covers/1.jpeg" alt="">
+                </div>
+
+                <div onclick="playOnClickImage(1)" class="musicListGrid">
+                    <img class="gridMusicImg" src="assets/covers/2.jpeg" alt="">
+                </div>
+                <div onclick="playOnClickImage(2)" class="musicListGrid">
+                    <img class="gridMusicImg" src="assets/covers/3.jpeg" alt="">
+                </div>
+                <div onclick="playOnClickImage(3)" class="musicListGrid">
+                    <img class="gridMusicImg" src="assets/covers/4.jpg" alt="">
+                </div>
+
+
+            </div>
+        </div>
+        <div class="main-body-grid-divs grid-div-body-layout grid-div-layout-3">
+            <div class="songs-list-box">
+                <h2>Suggested..</h2>
+                <div class="songs-list">
+                    <ul class="song-list">
+                        <li onclick="playOnClickImage(0)" >  <img src="assets/covers/1.jpeg" alt="" class="song-list-img">
+                            <div class="song-text-data">
+                                <h3>Alvonation Run </h3>
+                                <p>Alvonation</p>
+                            </div>
+                        </li>
+                        <li onclick="playOnClickImage(1)"> <img src="assets/covers/2.jpeg" alt="" class="song-list-img">
+                            <div class="song-text-data">
+                                <h3>Patlamaya Devam </h3>
+                                <p>Isyan Tetick</p>
+                            </div>
+                        </li>
+                        <li onclick="playOnClickImage(2)"> <img src="assets/covers/3.jpeg" alt="" class="song-list-img">
+                            <div class="song-text-data">
+                                <h3>The Next Eposide</h3>
+                                <p>Dr. Dre ft. Snoop Dog</p>
+                            </div>
+                        </li>
+                        <li onclick="playOnClickImage(3)"> <img src="assets/covers/4.jpg" alt="" class="song-list-img">
+                            <div class="song-text-data">
+                                <h3>Pubg Theme</h3>
+                                <p>Pubg Mobile</p>
+                            </div>
+                        </li>
+                        <li onclick="playOnClickImage(4)"> <img src="assets/covers/4.jpgs.jpeg" alt="" class="song-list-img">
+                            <div class="song-text-data">
+                                <h3>Will Be Added Soon</h3>
+                                <p>Unknown</p>
+                            </div>
+                        </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Over Main Body items -->
+    <div class="play-controls" id="play-controls">
+        <div class="current-music-image">
+            <img id="display-current-theme"  alt="">
+        </div>
+        <div class="music-info">
+            <h3>Music Name</h3>
+            <p>00 : 00</p>
+            <div class="seekBar" id="seekBar">
+                <div class="fill"></div>
+            </div>
+        </div>
+        <div class="music-control-btns">
+            <ul>
+                <li class="music-control-btn"><img class="icons control-music-icon" src="assets/icons/shuffle.png"
+                        alt=""></li>
+                <li class="music-control-btn"><img class="icons control-music-icon" src="assets/icons/song_repeat.png"
+                        alt=""></li>
+                <li class="music-control-btn"><img class="icons control-music-icon" onclick="prevAudio()"
+                        src="assets/icons/previous.png" alt=""></li>
+                <li class="music-control-btn"><img class="icons control-music-icon" id="playPause"
+                        onclick="togglePlayPause()" src="assets/icons/play.png" alt="">
+                </li>
+                <li class="music-control-btn"><img class="icons control-music-icon" id="nextBtn" onclick="nextAudio()"
+                        src="assets/icons/next.png" alt="">
+                </li>
+                <li class="music-control-btn"><img class="icons control-music-icon" onclick="volumeDown()"
+                        src="assets/icons/volumeMinus.png" alt=""></li>
+                <li class="music-control-btn"><img class="icons control-music-icon" onclick="volumeUp()"
+                        src="assets/icons/volumePlus.png" alt=""></li>
+                <li class="music-control-btn"><img class="icons control-music-icon" id="toggleMuteUp"
+                        onclick="hardVolume()" src="assets/icons/volume.png" alt=""></li>
+                <li class="music-control-btn"><img class="icons control-music-icon" src="assets/icons/favourite.png"
+                        alt=""></li>
+                <li class="music-control-btn"><img class="icons control-music-icon" onclick="cpSize()" src="assets/icons/fullscreen.png"
+                        alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
