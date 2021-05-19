@@ -12,6 +12,13 @@ h1 {
 h2 {
   font-size: 3rem;
 }
+a{
+  text-decoration: none;
+}
+button{
+  background: rgba(15, 132, 148, 0.308);
+  border: 3px solid gray;
+}
 .container {
   margin: 05px 3% 0 3%;
   display: flex;
@@ -67,6 +74,7 @@ section {
   font-family: 'caveat', cursive;
   color: black;
   font-weight: bold;
+  padding-bottom: 3%;
 }
 .txt h3:hover, .txt p:hover{
   color: gray;
