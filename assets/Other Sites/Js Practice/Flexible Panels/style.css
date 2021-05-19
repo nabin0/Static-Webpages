@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-p{
+p {
   font-weight: bold;
   background: rgba(41, 38, 38, 0.678);
   display: inline-block;
@@ -22,10 +22,8 @@ p{
   display: flex;
   flex: 1;
   flex-direction: column;
-   transition:
-        font-size 0.7s cubic-bezier(0.61,-0.19, 0.5,-0.11),
-        flex 0.7s cubic-bezier(0.61,-0.19, 0.5,-0.11),
-        background 0.2s;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.5, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.5, -0.11), background 0.2s;
   font-size: 20px;
   justify-content: center;
   align-items: center;
@@ -83,8 +81,8 @@ p{
   font-size: 60px;
 }
 
-@media (max-width: 660px){
-  .panels{
+@media (max-width: 660px) {
+  .panels {
     flex-direction: column;
   }
 }

@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-blue: #0716e4;
+  --black: #000000;
+  --clr-white: #f3e8e8;
+  --brown: rgb(165, 39, 39);
+}
+
+.heading {
+  font-size: 5em;
+  font-family: cursive;
+  color: var(--clr-blue);
+  text-shadow: 10px 10px 10px rgb(18, 146, 231);
+  text-align: center;
+}
+
+.horizontal-lines {
+  display: flex;
+  height: 2000vh;
+}
+.hLines {
+  height: 200px;
+  width: 10vw;
+  background-color: var(--clr-blue);
+}
+
+.line1 {
+  position: relative;
+  height: 100%;
+  top: 0;
+}
+
+.line2 {
+  position: relative;
+  height: 90%;
+  top: 200vh;
+}
+
+.line3 {
+  position: relative;
+  height: 80%;
+  top: 400vh;
+}
+
+.line4 {
+  position: relative;
+  height: 70%;
+  top: 600vh;
+}
+
+.line5 {
+  position: relative;
+  height: 60%;
+  top: 800vh;
+}
+
+.line6 {
+  position: relative;
+  height: 50%;
+  top: 1000vh;
+}
+
+.line7 {
+  position: relative;
+  height: 40%;
+  top: 1200vh;
+}
+
+.line8 {
+  position: relative;
+  height: 30%;
+  top: 1400vh;
+}
+
+.line9 {
+  position: relative;
+  height: 20%;
+  top: 1600vh;
+}
+
+.line10 {
+  position: relative;
+  height: 5%;
+  top: 1900vh;
+}
+
+.name {
+  display: flex;
+  height: 2200vh;
+}
+.spanList {
+  font-size: 10em;
+  margin: 0 2vw;
+  height: 100px;
+  text-shadow: 4px 4px 10px var(--brown);
+  color: var(--clr-blue);
+}
+.spano-1 {
+  position: sticky;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: 200vh;
+}
+
+.spano-2 {
+  position: sticky;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: 400vh;
+}
+
+.spano-3 {
+  position: sticky;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: 600vh;
+}
+
+.spano-4 {
+  position: sticky;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: 800vh;
+}
+
+.spano-5 {
+  position: sticky;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: 1000px;
+}
+
+.spano-6 {
+  position: sticky;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: 1200vh;
+}
+
+.spano-7 {
+  position: sticky;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: 1400vh;
+}
+
+.spano-8 {
+  position: sticky;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: 1600vh;
+}
+
+.spano-9 {
+  position: sticky;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: 1800vh;
+}
+
+.spano-10 {
+  position: sticky;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: 2000vh;
+}
