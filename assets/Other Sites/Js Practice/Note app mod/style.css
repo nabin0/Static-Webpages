@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+input,
+textarea {
+  box-shadow: inset -3px 3px 4px rgba(168, 162, 162, 0.473),
+    -3px 3px 4px rgba(168, 162, 162, 0.473);
+  outline: none;
+  border: none;
+}
+.navbar {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.searchForum {
+  display: flex;
+  width: 200px;
+}
+form {
+  margin: 30px auto;
+  width: 50vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn {
+  border: 3px solid rgb(198, 201, 14);
+  border-radius: 12%;
+  background: #bbb;
+  margin: 2px auto;
+}
+#inpForm{
+border: .3px solid gray;
+padding: 12px;
+text-align: center;
+}
+#title{
+  margin-bottom: 20px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.notes {
+  min-width: 200px;
+  min-height: 220px;
+  border: 1px solid gray;
+  border-radius: 8%;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  word-wrap: break-word;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset -6px 12px 5px salmon;
+  word-wrap: wrap;
+}
+
+.noteBody {
+  word-wrap: wrap;
+  white-space: pre-line;
+}

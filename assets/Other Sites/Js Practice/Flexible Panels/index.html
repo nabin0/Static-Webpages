@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexable gallery panel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="panels">
+      <div class="panel panel1">
+        <p>Thinking</p>
+        <p>Do not</p>
+        <p>Gives.</p>
+      </div>
+      <div class="panel panel2">
+        <p>Who Waits for you</p>
+        <p>Wait</p>
+        <p>For Them.</p>
+      </div>
+      <div class="panel panel3">
+        <p>Bycott Tomorrow</p>
+        <p>Do</p>
+
+        <p>Do it Today.</p>
+      </div>
+      <div class="panel panel4">
+        <p>Show</p>
+        <p>It</p>
+        <p>TO Your Fav. One.</p>
+      </div>
+      <div class="panel panel5">
+        <p>Go</p>
+        <p>Now</p>
+        <p>And Learn Something</p>
+      </div>
+    </div>
+
+    <script>
+      const panels = document.querySelectorAll(".panel");
+
+      function open(e) {
+        console.log(e.propertyName);
+        this.classList.toggle("open");
+      }
+
+      function toggleActive(e) {
+        if (e.propertyName.includes("flex")) {
+          this.classList.toggle("active-op");
+        }
+      }
+
+      panels.forEach((panel) => panel.addEventListener("click", open));
+      panels.forEach((panel) =>
+        panel.addEventListener("transitionend", toggleActive)
+      );
+    </script>
+  </body>
+</html>

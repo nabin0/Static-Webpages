@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="songa" class="songa">
+        <div class="img-box">
+            <img src="images/61.jpg" alt="">
+        </div>
+        <audio id="player" src="songa/24kGoldn - Mood (Official Video) ft. iann dior ( 128kbps ).mp3"></audio>
+        <div class="player-controls">
+            <button onclick="document.getElementById('player').play()">Play</button> </button>
+            <button onclick="document.getElementById('player').pause()">Pause </button> </button>
+            <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> </button>
+            <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> </button>
+        </div>
+    </div>
+</body>
+</html>

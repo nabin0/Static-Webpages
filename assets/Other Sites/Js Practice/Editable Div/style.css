@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.container{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.elemdiv{
+    border-radius: 7px;
+    background: rgba(43, 114, 46, 0.377);
+    margin: auto;
+}
+
+.textarea{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}

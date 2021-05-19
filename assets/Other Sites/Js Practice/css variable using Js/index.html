@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Updating css varriable using js</title>
+  </head>
+  <body>
+    <h2>CSS varriable Using <span class="h1">JS</span></h2>
+    <div class="control_box">
+      <label for="Scale">Scale: </label>
+      <input
+        oninput="generate()"
+        type="range"
+        name="scale"
+        id="scale"
+        value="6"
+        min="1"
+        max="10"
+        data-sizing="px"
+      />
+
+      <label for="Blur"> Blur: </label>
+      <input
+        oninput="generate()"
+        type="range"
+        name="Blur"
+        id="Blur"
+        min="0"
+        max="15"
+        data-sizing="px"
+      />
+
+      <label for="base"> Base: </label>
+      <input
+        oninput="generate()"
+        type="color"
+        name="Base"
+        id="Base"
+        value="#fba123"
+      />
+    </div>
+    <div class="box"></div>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      input {
+        display: block;
+        width: 40vw;
+      }
+      .h1 {
+        color: aqua;
+      }
+      .box {
+        max-width: 210px;
+        max-height: 210px;
+        width: 30px;
+        height: 30px;
+        border: 4px solid #fd9402;
+        background: #fba123;
+        margin: 10% auto;
+        position: relative;
+      }
+    </style>
+    <script>
+      function generate() {
+        const scale = document.getElementById("scale").value;
+        const blur = document.getElementById("Blur").value;
+        const color = document.getElementById("Base").value;
+        const box = document.querySelector(".box");
+
+        box.style.transform = `scale(${scale})`;
+        box.style.filter = `blur(${blur}px)`;
+        box.style.background = color;
+      }
+    </script>
+  </body>
+</html>

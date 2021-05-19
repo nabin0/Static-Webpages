@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.audio-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(138, 126, 126);
+}
+.menu-container {
+  width: 30vw;
+  background: rgb(71, 80, 66);
+  min-height: 100vh;
+  margin: 0 1%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translateX(-500px);
+  display: none;
+  transition: all 2s linear;
+}
+
+.close-btn{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    size: 2em;
+    border-radius: 50%;
+}
+.Menu-list h2 {
+  color: gold;
+  margin: 8px 2px;
+}
+.Menu-list h2:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+.Menu-list {
+  margin: auto;
+}
+.menu-container ul {
+  display: flex;
+  list-style-type: none;
+}
+.menu-container ul li {
+  margin: 6px 1px;
+  cursor: pointer;
+  color: rgb(9, 243, 9);
+  font-weight: bold;
+}
+.menu-container ul li:hover {
+  color: #ffffff;
+}
+.menu-container ul li i {
+  margin-right: 20px;
+}
+/* ======================Audio Box ======================== */
+.audio-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1%;
+  width: 100%;
+  height: 100vh;
+  background: rgb(50, 243, 2);
+}
+.audio-box i {
+  color: #ffffff;
+}
+.navbar {
+  display: flex;
+  position: relative;
+  height: 6vh;
+  background: rgb(201, 186, 186);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0% 0.1%;
+  align-items: center;
+}
+
+.navbar .left-cor {
+  position: relative;
+}
+.navbar i {
+  color: red;
+}
+.navbar i:hover {
+  color: #ffffff;
+}
+.navbar .left-cor i {
+  position: relative;
+  margin: 2px 12px;
+}
+.navbar .right-cor {
+  position: relative;
+}
+
+.navbar .right-cor i,
+.logo {
+  position: relative;
+  margin: 0px 20px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-self: center;
+  position: relative;
+  top: 8px;
+}
+
+.theme-box {
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(30deg, #2f1a2f, #f21ff2, #f21f21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.img-box {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+}
+.img-box img {
+  max-width: 100%;
+  position: relative;
+  border-radius: 50%;
+  height: 100%;
+}
+.img-box img:hover{
+    box-shadow: 8px 8px 9px #ffffff,-8px -8px 9px #ec0606;
+}
+
+.featured-songa {
+  background: transparent;
+}
+.featured-song-list {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.box {
+  margin: 1%;
+}
+.box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.audio-controls {
+  height: 20vh;
+  background: rgb(32, 31, 31);
+}
+.audio-controls .icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px;
+}
+button{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.control-btns {
+  position: relative;
+  /* border: 2px solid red; */
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.control-btns .play-btns a {
+  padding: 0 12px;
+}
+
+.seek-bar {
+  width: 100%;
+  height: 5px;
+  background: #000;
+}
+.seek-bar .fill {
+  width: 50%;
+  height: 5px;
+  background: rgb(229, 233, 16);
+}
+
+.repeat-btns .volume-btns {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.audio-box .audio-controls i:hover{
+    color: red;
+}

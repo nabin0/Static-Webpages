@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+  </head>
+  <body>
+    <div class="clock">
+      <div class="clock-face">
+        <div class="pins hours-pin"></div>
+        <div class="pins min-pin"></div>
+        <div class="pins sec-pin"></div>
+      </div>
+    </div>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: cursive;
+        background: #1ad6a7;
+      }
+      .clock {
+        width: 30rem;
+        height: 30rem;
+        position: relative;
+        margin: 20px auto;
+        border-radius: 50%;
+        border: 20px solid white;
+        padding: 2rem;
+      }
+      .clock-face {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      .pins {
+        width: 50%;
+        height: 4px;
+        position: absolute;
+        background: #000;
+        transform-origin: 100%;
+        top: 50%;
+        transform: rotate(90deg);
+        transition: all 0.1s;
+        transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+      }
+      .min-pin {
+        height: 6px;
+        background: #fac222;
+      }
+      .hours-pin {
+        height: 7.5px;
+        background-color: #f76606;
+      }
+    </style>
+
+    <script>
+      let hoursPin = document.querySelector(".hours-pin");
+      let minPin = document.querySelector(".min-pin");
+      let secPin = document.querySelector(".sec-pin");
+
+      function setTime() {
+        const now = new Date();
+
+        const seconds = now.getSeconds();
+        // const secondsDegree = (seconds / 60) * 360 + 90; / can use thi too
+        const secondsDegree = seconds * 6 + 90;
+        secPin.style.transform = `rotate(${secondsDegree}deg)`;
+
+        const minutes = now.getMinutes();
+        const minutesDegree = minutes * 6 + 90;
+        minPin.style.transform = `rotate(${minutesDegree}deg)`;
+
+        const hours = now.getHours();
+        const hoursDegree = hours * 30 + 90;
+        hoursPin.style.transform = `rotate(${hoursDegree}deg)`;
+      }
+
+      setInterval(setTime, 1);
+      setTime();
+    </script>
+  </body>
+</html>

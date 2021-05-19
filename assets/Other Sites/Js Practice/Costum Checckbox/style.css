@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: rgb(70, 68, 68);
+}
+
+label{
+    position: relative;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+label input{
+    appearance: none; 
+     display: none;
+}
+
+label span{
+    position: relative;
+    width: 150px;
+    height: 80px;
+    background: rgb(41, 40, 40);
+    display: block;
+    border-radius: 43px;
+    box-shadow: inset 6px 5px 20px #0000005d,
+                inset 0px 2px 1px #02020244,
+                inset 0px -2px 1px #02020244;
+}
+
+label .indicator{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, rgb(21, 21, 22), #575252);
+    border-radius: 50%;
+    transition: 0.5s;
+    box-shadow: inset 3px 2px 3px #00000085,
+                inset -2px 2px 2px #ffffff28;
+}
+
+label input:checked ~ .indicator
+{
+    left: 75px;
+}
+
+label .indicator::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 7px;
+    width: 7px;
+    background: red;
+    border-radius: 50%;
+    box-shadow:  0 0 5px rgb(255, 0, 0)
+                0 0 13px rgb(255, 0, 0),
+                0 0 23px rgb(255, 0, 0),
+                0 0 31px rgb(255, 0, 0),
+                0 0 46px rgb(255, 0, 0),
+                0 0 56px rgb(255, 0, 0),
+                0 0 66px rgb(255, 0, 0);
+}
+
+label input:checked ~ .indicator:before
+
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 7px;
+    width: 7px;
+    background: rgb(0, 183, 255);
+    border-radius: 50%;
+    box-shadow:  0 0 2px rgb(0, 183, 255)
+                0 0 5px rgb(0, 183, 255),
+                0 0 10px rgb(0, 183, 255),
+                0 0 20px rgb(0, 183, 255),
+                0 0 30px rgb(0, 183, 255),
+                0 0 40px rgb(0, 183, 255),
+                0 0 50px rgb(0, 183, 255);
+}

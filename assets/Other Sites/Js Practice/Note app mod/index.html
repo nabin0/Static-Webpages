@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <div class="navbar">
+      <div class="logo">NABIN</div>
+      <div class="searchForum">
+        <form action="">
+          <input id="search-input" type="text" placeholder="search" />
+          <button class="btn search-btn">Search</button>
+        </form>
+      </div>
+    </div>
+    <!-- Input Body -->
+    <form id="inpForm" action="">
+      <input type="text" id="title" placeholder="Enter yout Title: " />
+      <textarea
+        name="notes"
+        id="addNote"
+        cols="30"
+        rows="10"
+        placeholder="Enter Your Notes Here: "
+      ></textarea>
+      <button id="add-btn" class="btn add-btn">Add Note</button>
+    </form>
+
+    <!-- note Show -->
+    <div class="cards" id="note"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

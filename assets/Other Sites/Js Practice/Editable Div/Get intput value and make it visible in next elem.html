@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="inp">
+      <input onkeypress="opAction()" type="text" class="test" id="test" />
+      <div
+        id="divId"
+        class="opt"
+        style="height: 50px; width: 60px; border: 2px solid red"
+      >
+        hello
+      </div>
+    </div>
+
+    <script>
+      function opAction() {
+        var input = document.getElementById("test").value;
+        // console.log(input);
+        var output = document.getElementById("divId");
+        output.innerText = input;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Music</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="audio-player">
+      <!-- ======================Menu For Web=================== -->
+
+      <div class="menu-container" id="menu-cont">
+        <!-- =======================Music Menu Categories======================= -->
+        <div class="close-btn" id="close-btn">
+          <i class="fa fa-crosshairs"></i>
+        </div>
+        <div class="browse-music Menu-list">
+          <h2 class="menu-h2">Browse Music</h2>
+          <ul>
+            <li><i class="fas fa-drum"></i></li>
+            <li>Tunes</li>
+          </ul>
+          <ul>
+            <li><i class="fas fa-music"></i></li>
+            <li>New Music</li>
+          </ul>
+          <ul>
+            <li><i class="fab fa-spotify"></i></li>
+            <li>Spotify Music</li>
+          </ul>
+          <ul>
+            <li><i class="fas fa-drum"></i></li>
+            <li>Tunes</li>
+          </ul>
+        </div>
+        <!-- =====================Your Music Category========================= -->
+        <div class="Your-music Menu-list">
+          <h2 class="menu-h2">Your-music</h2>
+          <ul>
+            <li><i class="fa fa-heart"></i></li>
+            <li>Favorite</li>
+          </ul>
+          <ul>
+            <li><i class="fa fa-history"></i></li>
+            <li>History</li>
+          </ul>
+        </div>
+        <!-- =======================Playlist ============================== -->
+        <div class="Playlist Menu-list">
+          <h2>Playlist</h2>
+          <ul>
+            <li><i class="fas fa-list"></i></li>
+            <li>Add New List</li>
+          </ul>
+          <ul>
+            <li><i class="fas fa-list"></i></li>
+            <li>Playlist 1</li>
+          </ul>
+          <ul>
+            <li><i class="fas fa-list"></i></li>
+            <li>Playlist 2</li>
+          </ul>
+          <ul>
+            <li><i class="fas fa-list"></i></li>
+            <li>Playlist 3</li>
+          </ul>
+          <ul>
+            <li><i class="fas fa-list"></i></li>
+            <li>Playlist 4</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- =========================Audio Box================================= -->
+
+      <div class="audio-box">
+        <!-- =================NavBar============= -->
+        <div class="navbar">
+          <div class="left-cor">
+            <i id="menu-bar"  class="fa fa-bars"></i>
+            <i class="fa fa-search"> &nbsp; Search Songs...</i>
+          </div>
+          <div class="right-cor">
+            <i class="fa fa-cog"></i>
+            <i class="fa fa-bell"></i>
+            <img class="logo" src="images/1.jpg" alt="" />
+          </div>
+        </div>
+
+        <!-- =========================Theme Box====================== -->
+        <div class="theme-box">
+          <div class="img-box">
+            <img src="images/1.jpg" alt="" />
+          </div>
+        </div>
+        <!-- =========================Audio Control Box====================== -->
+        <div class="audio-controls">
+          <div class="icons">
+            <div class="audio-btns control-btns">
+              <div class="play-btns">
+                <a href="#"> <i class="fa fa-backward"></i></a>
+                <a href="#" class="play-pause"onclick="tooglePlayPause()" > <i class="fa fa-play"></i></a>
+                <a href="#"> <i class="fa fa-forward"></i></a>
+              </div>
+            </div>
+            <div class="seek control-btns">
+              <div class="seek-bar">
+                <div class="fill"></div>
+              </div>
+            </div>
+            <div class="repeat-btns control-btns">
+              <a href=""> <i class="fa fa-retweet"></i> </a>
+              <a href=""> <i class="fa fa-heart"></i> </a>
+
+              <div class="volume-btns">
+                <button onclick="downVolume()" class="decrease">-</button>
+                <a href="#" class="up-volume"> <i class="fa fa-volume-up"></i> </a>
+                <button onclick="upVolume()" class="increase">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =========================Featured Songa Box====================== -->
+        <div class="featured-songa">
+          <h3>Featuredd Songs...</h3>
+          <div class="featured-song-list">
+            <div class="box box-1">
+              <img src="images/31.jpg" alt="" />
+              <h3>By Eminem</h3>
+              <p>Song Name</p>
+            </div>
+            <div class="box box-2">
+              <img src="images/1.jpg" alt="" />
+              <h3>By Eminem</h3>
+              <p>Song Name</p>
+            </div>
+            <div class="box box-3">
+              <img src="images/31.jpg" alt="" />
+              <h3>By Eminem</h3>
+              <p>Song Name</p>
+            </div>
+            <div class="box box-4">
+              <img src="images/1.jpg" alt="" />
+              <h3>By Eminem</h3>
+              <p>Song Name</p>
+            </div>
+            <div class="box box-5">
+              <img src="images/31.jpg" alt="" />
+              <h3>By Eminem</h3>
+              <p>Song Name</p>
+            </div>
+            <div class="box box-6">
+              <img src="images/26.jpg" alt="" />
+              <h3>By Eminem</h3>
+              <p>Song Name</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
