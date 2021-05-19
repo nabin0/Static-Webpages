@@ -40,7 +40,145 @@ header {
   padding: 0px;
   box-shadow: 2px 2px 5px var(--dark);
   color: var(--dark);
+  position: relative;
 }
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerNavLD{
+  display: none;
+}
+/* Animated Nav bar */
+
+.animated-nav {
+  background: var(--light);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto 0;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  transition: all 0.7s linear;
+}
+.animated-nav.active {
+  width: 300px;
+  height: 50px;  
+}
+
+.animated-nav ul {
+  list-style-type: none;
+  display: flex;
+  width: 0px;
+  transition: all 0.7s linear;
+  padding: 0;
+  margin: 0 5px 0 0;
+}
+.animated-nav.active ul {
+  width: 300px;
+  text-decoration: none;
+}
+.animated-nav ul li {
+  padding: 0;
+  opacity: 0;
+  transition: all 0.7s linear;
+}
+.animated-nav.active ul li {
+  margin: 0 20px;
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+.animated-nav button {
+  border: 0;
+  border-radius: o;
+  width: 30px;
+  background: var(--light);
+  height: 30px;
+  position: relative;
+  transition: all 0.7s linear;
+}
+.animated-nav.active button {
+  width: 35px;
+  height: 35px;
+}
+.animated-nav button:focus {
+  outline: none;
+}
+.navList{
+  margin-right: 20px;
+}
+.navList a{
+  margin: 0 6px;
+}
+.ani-nav-line {
+  width: 25px;
+  transition: all 0.5s linear;
+  background: blue;
+  height: 5px;
+}
+.animated-nav.active .ani-nav-line-1 {
+  position: absolute;
+  transform: rotate(-490deg);
+  top: 42%;
+  left: 0;
+}
+
+.animated-nav.active .ani-nav-line-2 {
+  position: absolute;
+  bottom: 44%;
+  transform: rotate(490deg);
+  left: 0;
+}
+.ani-nav-line-1 {
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+.ani-nav-line-2 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+
+nav a {
+  position: relative;
+  color: var(--dark);
+  text-decoration: none;
+  padding: 5px 0;
+  font-weight: bold;
+  font-family: Josefin Sans;
+}
+.Nav-List  a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -2px;
+  width: 0;
+  left: 0;
+  background: var(--dark);
+  transition: all 0.35s linear;
+}
+.Nav-List a:hover:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -2px;
+  width: 100%;
+  left: 0;
+  background: var(--neon);
+}
+
+
+
+/* LoGO amd other .... */
 #logo img {
   margin-left: 0px;
   height: 45px;
@@ -50,12 +188,16 @@ header {
   filter: var(--filter);
   cursor: pointer;
 }
-.headerNav {
+.headerNavLD{
+  width: 20%;
+  margin-right: 3%;
+}
+.headerNav{
   width: 20%;
   margin-right: 3%;
 }
 .hamburgerMenu {
-  display: none;
+  display: block;
 }
 nav .navList {
   list-style-type: none;
@@ -234,7 +376,12 @@ nav .navList a {
     align-items: center;
     padding: 0px -10px 0px 0;
   }
-  .headerNav {
+  .headerNav{
+    display: none;
+  }
+  .headerNavLD {
+    z-index: 22;
+    display: block;
     margin: 0 -10% 0 0;
     padding: 0;
   }
@@ -249,11 +396,16 @@ nav .navList a {
     right: -60px;
     top: 50%;
   }
+
+  nav .navSlider{
+    position: absolute;
+  }
   nav .navList {
     top: 60px;
     position: absolute;
     left: 0;
     right: 0;
+    width: 100%;
     font-weight: bold;
     z-index: 999;
     font-size: 2rem;
@@ -262,10 +414,24 @@ nav .navList a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     transition: all 400ms linear;
+    align-items: center;
   }
-  nav .hideNavList {
-    top: -50vh;
+  nav .showHideNavList {
+    position: absolute;
+    top: -60vh;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-weight: bold;
+    z-index: 999;
+    font-size: 2rem;
+    background: var(--light);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 400ms linear;
+    align-items: center;
   }
 }

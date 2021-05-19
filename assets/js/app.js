@@ -8,7 +8,16 @@ let navList = document.getElementById("navList");
 
 // Menu Event
 hamburgerMenu.addEventListener("click", function () {
-  navList.classList.toggle("hideNavList");
+  // navList.classList.toggle("showHideNavList");
+
+  if (navList.classList.contains("showHideNavList")){
+    navList.classList.add("navList");
+    navList.classList.remove("showHideNavList");
+  }
+  else if (navList.classList.contains("navList")){
+    navList.classList.add("showHideNavList");
+    navList.classList.remove("navList");
+  }
 });
 
 // Toggle Theme
@@ -37,4 +46,7 @@ function ctrlTheme() {
 themeCtrl.addEventListener("click", ctrlTheme);
 
 
-
+// Animated Navigation Bar
+let aniNav = document.getElementById('animated-nav');
+let aniNavBtn = document.getElementById('custom-btn');
+aniNavBtn.addEventListener('click', () => aniNav.classList.toggle('active'));
