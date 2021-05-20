@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+header {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.logoImg {
+  height: 55px;
+}
+
+section {
+  display: flex;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  text-align: left;
+}
+
+section div {
+  padding: 2% 2%;
+}
+.txtData {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  float: left;
+}
+
+.introTxt {
+  width: 100%;
+  display: flex;
+  margin-left: 20%;
+  justify-content: center;
+  flex-direction: column;
+}
+.introTxt p{
+    font-size: 1.6rem;
+}
+.introTxt h1{
+    font-size: 2.6rem;
+}
+.introTxt h2{
+    font-size: 2rem;
+}
+.Mypic {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.foto img {
+  height: 105%;
+}
+
+.socialMedia{
+    margin-top: 0.1px;
+    margin-left: 20%;
+    width: 50vw;
+}
+.socialMedia ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.socialMedia li {
+    margin: 0 30px 0 0;
+}
+.socialMedia li a{
+    text-decoration: none;
+    font-size:40px;
+}
+.learnMore{
+    display: flex;
+    width: 50vw;
+    margin-left: 19%;
+    align-items: center;
+}
+.learnMore button{
+    height: 40px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 10px;
+    outline: none;
+    border: none;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.76), 2px 2px 1px rgba(0, 0, 0, 0.548);
+}
+.learnMore button i{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media screen and (max-width:800px) {
+  *{
+    box-sizing: border-box;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 98vw;
+  }
+  .introTxt {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .introTxt p{
+      font-size: 0.6rem;
+  }
+  .introTxt h1{
+      font-size: 1.6rem;
+  }
+  .introTxt h2{
+      font-size: 1rem;
+  }
+  .Mypic {
+    width: 98vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .foto img {
+   width: 100%;
+  }
+  
+
+  .socialMedia{
+    margin-top: 0.1px;
+    margin-left: 0;
+    width: 50vw;
+}
+
+.socialMedia li {
+    margin: 20px 30px 0 0;
+}
+.socialMedia li a{
+    font-size:30px;
+}
+.learnMore{
+    width: 98vw;
+    margin-left:-19%;
+    margin-top: 5%;
+}
+.learnMore button{
+    margin: 0 10px;
+}
+.learnMore button i{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+}
