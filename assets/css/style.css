@@ -43,12 +43,12 @@ header {
   position: relative;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.headerNavLD{
+.headerNavLD {
   display: none;
 }
 /* Animated Nav bar */
@@ -70,7 +70,7 @@ nav{
 }
 .animated-nav.active {
   width: 300px;
-  height: 50px;  
+  height: 50px;
 }
 
 .animated-nav ul {
@@ -111,10 +111,10 @@ nav{
 .animated-nav button:focus {
   outline: none;
 }
-.navList{
+.navList {
   margin-right: 20px;
 }
-.navList a{
+.navList a {
   margin: 0 6px;
 }
 .ani-nav-line {
@@ -156,7 +156,7 @@ nav a {
   font-weight: bold;
   font-family: Josefin Sans;
 }
-.Nav-List  a::after {
+.Nav-List a::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -176,8 +176,6 @@ nav a {
   background: var(--neon);
 }
 
-
-
 /* LoGO amd other .... */
 #logo img {
   margin-left: 0px;
@@ -188,11 +186,11 @@ nav a {
   filter: var(--filter);
   cursor: pointer;
 }
-.headerNavLD{
+.headerNavLD {
   width: 20%;
   margin-right: 3%;
 }
-.headerNav{
+.headerNav {
   width: 20%;
   margin-right: 3%;
 }
@@ -212,6 +210,7 @@ nav .navList a {
   text-decoration: none;
   color: var(--dark);
 }
+
 /* Body css now from here */
 .musik {
   height: 30px;
@@ -267,6 +266,63 @@ nav .navList a {
   top: -20px;
   color: var(--dark);
 }
+
+/* Social Media Icons */
+.socialMedia {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 45px;
+  height: 60px;
+  z-index: 9;
+  transition: all 300ms linear;
+}
+
+
+.socialMedia ul{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.socialMedia ul li{
+  padding-left: 5px;
+  transition: all 400ms linear;
+  width: 45px;
+  list-style-type: none;
+}
+.socialMedia ul li:hover{
+  transition: all 400ms linear;
+  width: 250px;
+}
+.socialMedia ul li:nth-child(odd){
+  background: rgb(0 255 208);
+}
+.socialMedia ul li:nth-child(even){
+  background: rgb(232, 248, 10);
+}
+.socialMedia ul li a{
+  text-decoration: none;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.socialMedia ul li a i{
+  font-size: 40px;
+}
+.socialMedia ul li a span{
+  font-size: 0px;
+  color: black;
+  font-weight: bold;
+  padding-right: 5px;
+  visibility: hidden;
+}
+.socialMedia ul li:hover a span{
+  transition: all 400ms linear;
+  font-size: 30px;
+  visibility: visible;
+    padding-left: 40px;
+  }
 
 .linesQuote {
   width: 90vw;
@@ -376,7 +432,7 @@ nav .navList a {
     align-items: center;
     padding: 0px -10px 0px 0;
   }
-  .headerNav{
+  .headerNav {
     display: none;
   }
   .headerNavLD {
@@ -397,7 +453,7 @@ nav .navList a {
     top: 50%;
   }
 
-  nav .navSlider{
+  nav .navSlider {
     position: absolute;
   }
   nav .navList {
